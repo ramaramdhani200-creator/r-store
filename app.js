@@ -2,8 +2,8 @@ import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js
 
 // Paste the Project URL and anon/public key from Supabase Settings > API.
 // The anon key is designed for browser use ONLY when Row Level Security is correctly enabled.
-const SUPABASE_URL = 'PASTE_SUPABASE_PROJECT_URL_HERE';
-const SUPABASE_ANON_KEY = 'PASTE_SUPABASE_ANON_PUBLIC_KEY_HERE';
+const SUPABASE_URL = 'nbxbgijreaukbguzwwzq';
+const SUPABASE_ANON_KEY = 'nbxbgijreaukbguzwwzq';
 const configured = SUPABASE_URL.startsWith('https://') && !SUPABASE_URL.includes('PASTE_') && !SUPABASE_ANON_KEY.includes('PASTE_');
 const supabase = configured ? createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
 const money = n => 'Rp ' + Number(n || 0).toLocaleString('id-ID');
